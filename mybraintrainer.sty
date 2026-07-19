@@ -69,7 +69,8 @@
   \end{frame}%
 }
 
-%% Answer slide: \AnswerSlide[badge]{title}{body}
+%% Answer slide: \AnswerSlide[badge]{answer}{optional one-liner hint}
+%% Answer is displayed large. Hint (if any) appears small below.
 \NewDocumentCommand{\AnswerSlide}{ o m m }{%
   \begin{frame}%
     \IfValueT{#1}{%
@@ -78,8 +79,11 @@
           at (current page.north east) {#1};
       \end{tikzpicture}%
     }%
-    \frametitle{Odpowiedź \theexcounter: #2}%
-    #3%
+    \frametitle{Odpowiedź \theexcounter}%
+    \centering
+    \vspace{1.5em}
+    {\Huge\bfseries #2\par}%
+    \ifblank{#3}{}{\vspace{1.5em}{\small\itshape #3\par}}%
   \end{frame}%
 }
 
