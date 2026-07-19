@@ -1,0 +1,88 @@
+\PassOptionsToPackage{paperwidth=1080pt,%
+                      paperheight=1920pt,%
+                      margin=0pt}{geometry}
+\PassOptionsToPackage{landscape}{geometry}
+
+\documentclass{mybraintrainer}
+\usepackage{mybraintrainer}
+
+\begin{document}
+
+\begin{frame}
+  \centering
+  {\Huge Trening Mózgu 2025}\\[0.5em]
+  {\large by \href{https://github.com/konradcinkusz}{\faGithub\;konradcinkusz}}
+\end{frame}
+
+\begin{frame}{O tym zbiorze}
+  \setbeamercolor{block title}{bg=ArithColor,fg=white}
+  \setbeamercolor{block body}{bg=ArithColor!10,fg=black}
+
+  \begin{block}{\faBullseye\quad Cel}
+    Ćwicz mózg codziennie — krótkie zadania arytmetyczne i logiczne
+    wykonywane na czas bez kalkulatora.
+  \end{block}
+
+  \begin{block}{\faPlay\quad Jak używać}
+    Przed otwarciem odpowiedzi uruchom stoper.
+    Porównaj swój czas z podanym limitem.
+  \end{block}
+
+  \begin{block}{\faList\quad Zawartość}
+    Arytmetyka, kolejność działań, zagadki logiczne,
+    ciągi i wzorce, wyzwania mieszane — 38 zadań łącznie.
+  \end{block}
+
+  {
+    \setbeamercolor{block title}{bg=SeqColor,fg=white}
+    \setbeamercolor{block body}{bg=SeqColor!10,fg=black}
+    \begin{block}{\faStar\quad Poziomy trudności}
+      \begin{itemize}
+        \item \DifficultyStars{1}\ --- łatwy (do 1 min)
+        \item \DifficultyStars{2}\ --- średni (1--3 min)
+        \item \DifficultyStars{3}\ --- trudny (3--5 min)
+      \end{itemize}
+    \end{block}
+  }
+\end{frame}
+
+\begin{frame}[label=toc]{Spis Treści}
+  \centering\setlength\tabcolsep{0.5em}
+  \begin{tabular}{cc}
+    \TOCButtonTall{sec1}{sec1}{Arytmetyka} &
+    \TOCButtonTall{sec2}{sec2}{Kolejność Działań} \\[1em]
+    \TOCButtonTall{sec3}{sec3}{Zagadki Logiczne} &
+    \TOCButtonTall{sec4}{sec4}{Ciągi i Wzorce} \\[1em]
+    \multicolumn{2}{c}{\TOCButtonTall{sec5}{sec5}{Mieszane Wyzwania}}\\[0.5em]
+  \end{tabular}
+\end{frame}
+
+\hypertarget{sec1}{}
+\section{Arytmetyka: Podstawy}
+\input{areas/1-arytmetyka-podstawy}
+
+\hypertarget{sec2}{}
+\section{Kolejność Działań}
+\input{areas/2-kolejnosc-dzialan}
+
+\hypertarget{sec3}{}
+\section{Zagadki Logiczne}
+\input{areas/3-zagadki-logiczne}
+
+\hypertarget{sec4}{}
+\section{Ciągi i Wzorce}
+\input{areas/4-ciagi-i-wzorce}
+
+\hypertarget{sec5}{}
+\section{Mieszane Wyzwania}
+\input{areas/5-mieszane-wyzwania}
+
+\begin{frame}
+  \centering
+  {\Huge Brawo!}\\[0.5em]
+  Regularny trening mózgu poprawia koncentrację\\[0.3em]
+  i szybkość myślenia.\\[1em]
+  {\large Wróć jutro po więcej!}
+\end{frame}
+
+\end{document}
